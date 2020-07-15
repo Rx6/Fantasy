@@ -26,6 +26,8 @@
 		EA8FA23B24BE02530083F767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8FA23A24BE02530083F767 /* Assets.xcassets */; };
 		EA8FA23E24BE02530083F767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8FA23C24BE02530083F767 /* LaunchScreen.storyboard */; };
 		EA8FA24A24BE09A00083F767 /* CALayer+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FA24924BE09A00083F767 /* CALayer+FKExtension.swift */; };
+		EAE0B96624BF56B1005400D0 /* UIView+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE0B96524BF56B1005400D0 /* UIView+FKExtension.swift */; };
+		EAE0B96824BF5C62005400D0 /* UITextField+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE0B96724BF5C62005400D0 /* UITextField+FKExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		EA8FA23D24BE02530083F767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA8FA23F24BE02530083F767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA8FA24924BE09A00083F767 /* CALayer+FKExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+FKExtension.swift"; sourceTree = "<group>"; };
+		EAE0B96524BF56B1005400D0 /* UIView+FKExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FKExtension.swift"; sourceTree = "<group>"; };
+		EAE0B96724BF5C62005400D0 /* UITextField+FKExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+FKExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 				EA16C5FB24BF1204003F96E7 /* UIScreen+FKExtension.swift */,
 				EA16C5FE24BF1204003F96E7 /* UIScrollView+FKExtension.swift */,
 				EA16C5FC24BF1204003F96E7 /* UITableView+FKExtension.swift */,
+				EAE0B96524BF56B1005400D0 /* UIView+FKExtension.swift */,
+				EAE0B96724BF5C62005400D0 /* UITextField+FKExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -213,7 +219,9 @@
 				EA16C60224BF1204003F96E7 /* UIControl+FKExtension.swift in Sources */,
 				EA16C60924BF1204003F96E7 /* UIImage+FKExtension.swift in Sources */,
 				EA16C60624BF1204003F96E7 /* UIBarButtonItem+FKExtension.swift in Sources */,
+				EAE0B96624BF56B1005400D0 /* UIView+FKExtension.swift in Sources */,
 				EA16C60A24BF1204003F96E7 /* UIScrollView+FKExtension.swift in Sources */,
+				EAE0B96824BF5C62005400D0 /* UITextField+FKExtension.swift in Sources */,
 				EA16C60824BF1204003F96E7 /* UITableView+FKExtension.swift in Sources */,
 				EA16C60424BF1204003F96E7 /* UIDevice+FKExtension.swift in Sources */,
 				EA16C60324BF1204003F96E7 /* UIApplication+FKExtension.swift in Sources */,

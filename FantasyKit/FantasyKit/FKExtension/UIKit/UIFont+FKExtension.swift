@@ -1,5 +1,5 @@
 //
-//  UIBezierPath+TCExtension.swift
+//  UIFont+TCExtension.swift
 //  TCExtension
 //
 //  Created by Tony on 2020/7/10.
@@ -9,4 +9,6 @@
 import Foundation
 import UIKit
 
-public extension 
+public extension UIFont {
+    
+}
