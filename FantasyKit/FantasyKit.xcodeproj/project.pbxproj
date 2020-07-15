@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA16C60224BF1204003F96E7 /* UIControl+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5F624BF1204003F96E7 /* UIControl+FKExtension.swift */; };
+		EA16C60324BF1204003F96E7 /* UIApplication+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5F724BF1204003F96E7 /* UIApplication+FKExtension.swift */; };
+		EA16C60424BF1204003F96E7 /* UIDevice+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5F824BF1204003F96E7 /* UIDevice+FKExtension.swift */; };
+		EA16C60524BF1204003F96E7 /* UIGestureRecognizer+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5F924BF1204003F96E7 /* UIGestureRecognizer+FKExtension.swift */; };
+		EA16C60624BF1204003F96E7 /* UIBarButtonItem+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5FA24BF1204003F96E7 /* UIBarButtonItem+FKExtension.swift */; };
+		EA16C60724BF1204003F96E7 /* UIScreen+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5FB24BF1204003F96E7 /* UIScreen+FKExtension.swift */; };
+		EA16C60824BF1204003F96E7 /* UITableView+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5FC24BF1204003F96E7 /* UITableView+FKExtension.swift */; };
+		EA16C60924BF1204003F96E7 /* UIImage+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5FD24BF1204003F96E7 /* UIImage+FKExtension.swift */; };
+		EA16C60A24BF1204003F96E7 /* UIScrollView+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5FE24BF1204003F96E7 /* UIScrollView+FKExtension.swift */; };
+		EA16C60B24BF1204003F96E7 /* UIColor+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5FF24BF1204003F96E7 /* UIColor+FKExtension.swift */; };
+		EA16C60C24BF1204003F96E7 /* UIFont+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C60024BF1204003F96E7 /* UIFont+FKExtension.swift */; };
+		EA16C60D24BF1204003F96E7 /* UIBezierPath+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C60124BF1204003F96E7 /* UIBezierPath+FKExtension.swift */; };
 		EA8FA23224BE02520083F767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FA23124BE02520083F767 /* AppDelegate.swift */; };
 		EA8FA23424BE02520083F767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FA23324BE02520083F767 /* SceneDelegate.swift */; };
 		EA8FA23624BE02520083F767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FA23524BE02520083F767 /* ViewController.swift */; };
@@ -17,6 +29,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA16C5F624BF1204003F96E7 /* UIControl+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+FKExtension.swift"; sourceTree = "<group>"; };
+		EA16C5F724BF1204003F96E7 /* UIApplication+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+FKExtension.swift"; sourceTree = "<group>"; };
+		EA16C5F824BF1204003F96E7 /* UIDevice+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+FKExtension.swift"; sourceTree = "<group>"; };
+		EA16C5F924BF1204003F96E7 /* UIGestureRecognizer+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+FKExtension.swift"; sourceTree = "<group>"; };
+		EA16C5FA24BF1204003F96E7 /* UIBarButtonItem+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+FKExtension.swift"; sourceTree = "<group>"; };
+		EA16C5FB24BF1204003F96E7 /* UIScreen+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+FKExtension.swift"; sourceTree = "<group>"; };
+		EA16C5FC24BF1204003F96E7 /* UITableView+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+FKExtension.swift"; sourceTree = "<group>"; };
+		EA16C5FD24BF1204003F96E7 /* UIImage+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+FKExtension.swift"; sourceTree = "<group>"; };
+		EA16C5FE24BF1204003F96E7 /* UIScrollView+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+FKExtension.swift"; sourceTree = "<group>"; };
+		EA16C5FF24BF1204003F96E7 /* UIColor+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+FKExtension.swift"; sourceTree = "<group>"; };
+		EA16C60024BF1204003F96E7 /* UIFont+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+FKExtension.swift"; sourceTree = "<group>"; };
+		EA16C60124BF1204003F96E7 /* UIBezierPath+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+FKExtension.swift"; sourceTree = "<group>"; };
 		EA8FA22E24BE02520083F767 /* FantasyKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8FA23124BE02520083F767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA8FA23324BE02520083F767 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +107,18 @@
 		EA8FA24624BE02890083F767 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				EA16C5F724BF1204003F96E7 /* UIApplication+FKExtension.swift */,
+				EA16C5FA24BF1204003F96E7 /* UIBarButtonItem+FKExtension.swift */,
+				EA16C60124BF1204003F96E7 /* UIBezierPath+FKExtension.swift */,
+				EA16C5FF24BF1204003F96E7 /* UIColor+FKExtension.swift */,
+				EA16C5F624BF1204003F96E7 /* UIControl+FKExtension.swift */,
+				EA16C5F824BF1204003F96E7 /* UIDevice+FKExtension.swift */,
+				EA16C60024BF1204003F96E7 /* UIFont+FKExtension.swift */,
+				EA16C5F924BF1204003F96E7 /* UIGestureRecognizer+FKExtension.swift */,
+				EA16C5FD24BF1204003F96E7 /* UIImage+FKExtension.swift */,
+				EA16C5FB24BF1204003F96E7 /* UIScreen+FKExtension.swift */,
+				EA16C5FE24BF1204003F96E7 /* UIScrollView+FKExtension.swift */,
+				EA16C5FC24BF1204003F96E7 /* UITableView+FKExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -173,9 +209,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA16C60724BF1204003F96E7 /* UIScreen+FKExtension.swift in Sources */,
+				EA16C60224BF1204003F96E7 /* UIControl+FKExtension.swift in Sources */,
+				EA16C60924BF1204003F96E7 /* UIImage+FKExtension.swift in Sources */,
+				EA16C60624BF1204003F96E7 /* UIBarButtonItem+FKExtension.swift in Sources */,
+				EA16C60A24BF1204003F96E7 /* UIScrollView+FKExtension.swift in Sources */,
+				EA16C60824BF1204003F96E7 /* UITableView+FKExtension.swift in Sources */,
+				EA16C60424BF1204003F96E7 /* UIDevice+FKExtension.swift in Sources */,
+				EA16C60324BF1204003F96E7 /* UIApplication+FKExtension.swift in Sources */,
+				EA16C60B24BF1204003F96E7 /* UIColor+FKExtension.swift in Sources */,
 				EA8FA23624BE02520083F767 /* ViewController.swift in Sources */,
 				EA8FA23224BE02520083F767 /* AppDelegate.swift in Sources */,
 				EA8FA24A24BE09A00083F767 /* CALayer+FKExtension.swift in Sources */,
+				EA16C60524BF1204003F96E7 /* UIGestureRecognizer+FKExtension.swift in Sources */,
+				EA16C60C24BF1204003F96E7 /* UIFont+FKExtension.swift in Sources */,
+				EA16C60D24BF1204003F96E7 /* UIBezierPath+FKExtension.swift in Sources */,
 				EA8FA23424BE02520083F767 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
