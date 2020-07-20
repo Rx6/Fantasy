@@ -15,12 +15,12 @@ public extension UIColor {
         hex = hex.uppercased()
         var prefix = "#"
 
-        if hex.hasPrefix(prefix) ?? false {
+        if hex.hasPrefix(prefix) {
             hex = hex.replacingOccurrences(of: prefix, with: "").uppercased()
         }
 
         prefix = "0X"
-        if hex.hasPrefix(prefix) ?? false {
+        if hex.hasPrefix(prefix) {
             hex = hex.replacingOccurrences(of: prefix, with: "").uppercased()
         }
 
@@ -29,7 +29,7 @@ public extension UIColor {
         var blue: CGFloat = 0
         var green: CGFloat = 0
         
-        switch (hex.count ?? 0) {
+        switch hex.count {
             case 3 /* #RGB */:
                 alpha = 1.0
                 red = UIColor.colorComponent(from: hex, start: 0, length: 1)
