@@ -16,11 +16,29 @@ public extension UIView {
             self.layer.render(in: context)
             let snap = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
-            return snap;
+            return snap
         } else {
             return nil
         }
     }
+    
+    var snapshotPDF: Data? {
+        var bounds = self.bounds
+        let data = Data()
+        if let consumer = CGDataConsumer(data: data as! CFMutableData), let context = CGContext(consumer: consumer, mediaBox: &bounds, nil) {
+            context.beginPDFPage(nil)
+            context.translateBy(x: 0, y: bounds.size.height)
+            context.scaleBy(x: 1.0, y: -1.0)
+            self.layer.render(in: context)
+            context.endPDFPage()
+            context.closePDF()
+            return data
+        }
+        return nil
+    }
+    
+    
+    
     var left: CGFloat {
         get {
             return self.frame.minX
@@ -169,23 +187,70 @@ public extension UIView {
         return NSKeyedUnarchiver.unarchiveObject(with: NSKeyedArchiver.archivedData(withRootObject: self)) as! T
     }
     
-//    func convert(_ point: CGPoint, toView: UIView?) -> CGPoint {
-//        if let view = toView {
-//            let from: UIWindow?
-//            let to: UIWindow?
-//            if let window = self as? UIWindow {
-//                from = window
-//            } else {
-//                from = self.window
-//            }
-//        } else {
-//            if let windown = self as? UIWindow {
-//                return windown.convert(point, to: nil)
-//            } else {
-//                return self.convert(point, to: nil)
-//            }
-//        }
-//    }
+    func convert(point: CGPoint, toView: UIView?) -> CGPoint {
+        guard let view = toView else {
+            if let window = self as? UIWindow {
+                return window.convert(point, to: nil)
+            } else {
+                return self.convert(point, to: nil)
+            }
+        }
+        if let from = view is UIWindow ? (view as! UIWindow) : view.window, let to = self is UIWindow ? (self as! UIWindow) : self.window, from != to {
+            var result = self.convert(point, to: from)
+            result = to.convert(result, from: from)
+            return view.convert(result, from: to)
+        } else {
+            return self.convert(point, to: view)
+        }
+    }
+    func convert(point: CGPoint, fromView: UIView?) -> CGPoint {
+        guard let view = fromView else {
+            if let window = self as? UIWindow {
+                return window.convert(point, from: nil)
+            } else {
+                return self.convert(point, from: nil)
+            }
+        }
+        if let from = view is UIWindow ? (view as! UIWindow) : view.window, let to = self is UIWindow ? (self as! UIWindow) : self.window, from != to {
+            var result = from.convert(point, from: view)
+            result = to.convert(result, from: from)
+            return self.convert(result, from: to)
+        } else {
+            return self.convert(point, from: view)
+        }
+    }
+    func convert(rect: CGRect, toView: UIView?) -> CGRect {
+        guard let view = toView else {
+            if let window = self as? UIWindow {
+                return window.convert(rect, to: nil)
+            } else {
+                return self.convert(rect, to: nil)
+            }
+        }
+        if let from = view is UIWindow ? (view as! UIWindow) : view.window, let to = self is UIWindow ? (self as! UIWindow) : self.window, from != to {
+            var result = self.convert(rect, to: from)
+            result = to.convert(result, from: from)
+            return view.convert(result, from: to)
+        } else {
+            return self.convert(rect, to: view)
+        }
+    }
+    func convert(rect: CGRect, fromView: UIView?) -> CGRect {
+        guard let view = fromView else {
+            if let window = self as? UIWindow {
+                return window.convert(rect, from: nil)
+            } else {
+                return self.convert(rect, from: nil)
+            }
+        }
+        if let from = view is UIWindow ? (view as! UIWindow) : view.window, let to = self is UIWindow ? (self as! UIWindow) : self.window, from != to {
+            var result = from.convert(rect, from: view)
+            result = to.convert(result, from: from)
+            return self.convert(result, from: to)
+        } else {
+            return self.convert(rect, from: view)
+        }
+    }
     
     func setLayerShadow(_ color: UIColor, offset: CGSize, radius: CGFloat) {
         self.layer.shadowColor = color.cgColor
