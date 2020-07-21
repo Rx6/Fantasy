@@ -1,0 +1,51 @@
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+*.xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+Carthage/Build
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+iOSInjectionProject/
+
+timeline.xctimeline
+playground.xcworkspace
+
+.build/
+
+Pods/
+Podfile.lock
+
+Dependencies/
+.accio/
+
+*.xcworkspace/
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+.idea/*
+
+iOSInjectionProject/

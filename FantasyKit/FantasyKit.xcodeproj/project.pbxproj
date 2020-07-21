@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		998F34774C4C4B58F990A7DB /* Pods_FantasyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5E3EB85647D435AA3BEE4D /* Pods_FantasyKit.framework */; };
 		EA16C60224BF1204003F96E7 /* UIControl+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5F624BF1204003F96E7 /* UIControl+FKExtension.swift */; };
 		EA16C60324BF1204003F96E7 /* UIApplication+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5F724BF1204003F96E7 /* UIApplication+FKExtension.swift */; };
 		EA16C60424BF1204003F96E7 /* UIDevice+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5F824BF1204003F96E7 /* UIDevice+FKExtension.swift */; };
@@ -20,10 +21,9 @@
 		EA16C60C24BF1204003F96E7 /* UIFont+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C60024BF1204003F96E7 /* UIFont+FKExtension.swift */; };
 		EA16C60D24BF1204003F96E7 /* UIBezierPath+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C60124BF1204003F96E7 /* UIBezierPath+FKExtension.swift */; };
 		EA16C64824C689CC003F96E7 /* UILabel_FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C64724C689CC003F96E7 /* UILabel_FKExtension.swift */; };
+		EA16C64C24C72708003F96E7 /* UIImageView+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C64B24C72708003F96E7 /* UIImageView+FKExtension.swift */; };
 		EA8FA23224BE02520083F767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FA23124BE02520083F767 /* AppDelegate.swift */; };
-		EA8FA23424BE02520083F767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FA23324BE02520083F767 /* SceneDelegate.swift */; };
 		EA8FA23624BE02520083F767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FA23524BE02520083F767 /* ViewController.swift */; };
-		EA8FA23924BE02520083F767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8FA23724BE02520083F767 /* Main.storyboard */; };
 		EA8FA23B24BE02530083F767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8FA23A24BE02530083F767 /* Assets.xcassets */; };
 		EA8FA23E24BE02530083F767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8FA23C24BE02530083F767 /* LaunchScreen.storyboard */; };
 		EA8FA24A24BE09A00083F767 /* CALayer+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FA24924BE09A00083F767 /* CALayer+FKExtension.swift */; };
@@ -32,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C71054669BFE45851DF05E34 /* Pods-FantasyKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FantasyKit.debug.xcconfig"; path = "Target Support Files/Pods-FantasyKit/Pods-FantasyKit.debug.xcconfig"; sourceTree = "<group>"; };
+		CC5E3EB85647D435AA3BEE4D /* Pods_FantasyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FantasyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FC34D5AB336FE539CA652C /* Pods-FantasyKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FantasyKit.release.xcconfig"; path = "Target Support Files/Pods-FantasyKit/Pods-FantasyKit.release.xcconfig"; sourceTree = "<group>"; };
 		EA16C5F624BF1204003F96E7 /* UIControl+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+FKExtension.swift"; sourceTree = "<group>"; };
 		EA16C5F724BF1204003F96E7 /* UIApplication+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+FKExtension.swift"; sourceTree = "<group>"; };
 		EA16C5F824BF1204003F96E7 /* UIDevice+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+FKExtension.swift"; sourceTree = "<group>"; };
@@ -45,11 +48,10 @@
 		EA16C60024BF1204003F96E7 /* UIFont+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+FKExtension.swift"; sourceTree = "<group>"; };
 		EA16C60124BF1204003F96E7 /* UIBezierPath+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+FKExtension.swift"; sourceTree = "<group>"; };
 		EA16C64724C689CC003F96E7 /* UILabel_FKExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel_FKExtension.swift; sourceTree = "<group>"; };
+		EA16C64B24C72708003F96E7 /* UIImageView+FKExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+FKExtension.swift"; sourceTree = "<group>"; };
 		EA8FA22E24BE02520083F767 /* FantasyKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8FA23124BE02520083F767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA8FA23324BE02520083F767 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EA8FA23524BE02520083F767 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EA8FA23824BE02520083F767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA8FA23A24BE02530083F767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA8FA23D24BE02530083F767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA8FA23F24BE02530083F767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,17 +65,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				998F34774C4C4B58F990A7DB /* Pods_FantasyKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A4D899C0EB34203ECECC8AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC5E3EB85647D435AA3BEE4D /* Pods_FantasyKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65B94764D368F706CA3ECA46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C71054669BFE45851DF05E34 /* Pods-FantasyKit.debug.xcconfig */,
+				E2FC34D5AB336FE539CA652C /* Pods-FantasyKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA8FA22524BE02510083F767 = {
 			isa = PBXGroup;
 			children = (
 				EA8FA23024BE02520083F767 /* FantasyKit */,
 				EA8FA22F24BE02520083F767 /* Products */,
+				65B94764D368F706CA3ECA46 /* Pods */,
+				2A4D899C0EB34203ECECC8AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,9 +112,7 @@
 			children = (
 				EA8FA24524BE027F0083F767 /* FKExtension */,
 				EA8FA23124BE02520083F767 /* AppDelegate.swift */,
-				EA8FA23324BE02520083F767 /* SceneDelegate.swift */,
 				EA8FA23524BE02520083F767 /* ViewController.swift */,
-				EA8FA23724BE02520083F767 /* Main.storyboard */,
 				EA8FA23A24BE02530083F767 /* Assets.xcassets */,
 				EA8FA23C24BE02530083F767 /* LaunchScreen.storyboard */,
 				EA8FA23F24BE02530083F767 /* Info.plist */,
@@ -128,6 +148,7 @@
 				EAE0B96524BF56B1005400D0 /* UIView+FKExtension.swift */,
 				EAE0B96724BF5C62005400D0 /* UITextField+FKExtension.swift */,
 				EA16C64724C689CC003F96E7 /* UILabel_FKExtension.swift */,
+				EA16C64B24C72708003F96E7 /* UIImageView+FKExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -154,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA8FA24224BE02530083F767 /* Build configuration list for PBXNativeTarget "FantasyKit" */;
 			buildPhases = (
+				03C14BFACC4CD45EDDC4EBD7 /* [CP] Check Pods Manifest.lock */,
 				EA8FA22A24BE02520083F767 /* Sources */,
 				EA8FA22B24BE02520083F767 /* Frameworks */,
 				EA8FA22C24BE02520083F767 /* Resources */,
+				B1465285156EFE4CED4DDC8A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,11 +230,52 @@
 			files = (
 				EA8FA23E24BE02530083F767 /* LaunchScreen.storyboard in Resources */,
 				EA8FA23B24BE02530083F767 /* Assets.xcassets in Resources */,
-				EA8FA23924BE02520083F767 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03C14BFACC4CD45EDDC4EBD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FantasyKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1465285156EFE4CED4DDC8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FantasyKit/Pods-FantasyKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FantasyKit/Pods-FantasyKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FantasyKit/Pods-FantasyKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA8FA22A24BE02520083F767 /* Sources */ = {
@@ -231,26 +295,18 @@
 				EA16C60B24BF1204003F96E7 /* UIColor+FKExtension.swift in Sources */,
 				EA8FA23624BE02520083F767 /* ViewController.swift in Sources */,
 				EA8FA23224BE02520083F767 /* AppDelegate.swift in Sources */,
+				EA16C64C24C72708003F96E7 /* UIImageView+FKExtension.swift in Sources */,
 				EA8FA24A24BE09A00083F767 /* CALayer+FKExtension.swift in Sources */,
 				EA16C60524BF1204003F96E7 /* UIGestureRecognizer+FKExtension.swift in Sources */,
 				EA16C60C24BF1204003F96E7 /* UIFont+FKExtension.swift in Sources */,
 				EA16C64824C689CC003F96E7 /* UILabel_FKExtension.swift in Sources */,
 				EA16C60D24BF1204003F96E7 /* UIBezierPath+FKExtension.swift in Sources */,
-				EA8FA23424BE02520083F767 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EA8FA23724BE02520083F767 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA8FA23824BE02520083F767 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA8FA23C24BE02530083F767 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -378,11 +434,13 @@
 		};
 		EA8FA24324BE02530083F767 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C71054669BFE45851DF05E34 /* Pods-FantasyKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R32GG63CFC;
 				INFOPLIST_FILE = FantasyKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,11 +454,13 @@
 		};
 		EA8FA24424BE02530083F767 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2FC34D5AB336FE539CA652C /* Pods-FantasyKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R32GG63CFC;
 				INFOPLIST_FILE = FantasyKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
