@@ -146,11 +146,25 @@ public extension UIDevice {
     static var systemUptime: Date {
         Date(timeIntervalSinceNow: 0 - ProcessInfo.processInfo.systemUptime)
     }
-//    static var ipAddressWIFI: String {
-//        
-//    }
-//    static var ipAddressCell: String {
-//        
-//    }
     
+    static var statusBarHeight: CGFloat {
+        return UIApplication.shared.statusBarFrame.height
+    }
+    static let isIphoneX: Bool = UIDevice.statusBarHeight > 20
+    static let iphoneXBottomMargin: CGFloat = UIDevice.isIphoneX ? 20 : 0
+    
+    static var navigationBarHeight: CGFloat {
+        return UIDevice.statusBarHeight + 44
+    }
+    static var bottomHeight: CGFloat {
+        return UIDevice.isIphoneX ? 34 : 0
+    }
+    
+    static var isIphoneXR : Bool {
+        return UIScreen.instancesRespond(to: #selector(getter: UIScreen.currentMode)) ? CGSize(width: 828, height: 1792).equalTo(UIScreen.main.currentMode!.size) && !isPad : false
+    }
+    
+    static var isIphoneXS_MAX : Bool {
+        return UIScreen.instancesRespond(to: #selector(getter: UIScreen.currentMode)) ? CGSize(width: 1242, height: 2688).equalTo(UIScreen.main.currentMode!.size) && !isPad : false
+    }
 }

@@ -333,4 +333,59 @@ public extension CALayer {
 //            
 //        }
 //    }
+    
+    /**
+     创建线条
+     
+     @param color 颜色
+     @param lineWidth 线宽
+     @param path path
+     @return 线
+     */
+    static func getLineLayer(_ color: UIColor, lineWidth: CGFloat, path: UIBezierPath) -> CAShapeLayer {
+        let layer: CAShapeLayer = CAShapeLayer()
+        layer.strokeColor = color.cgColor
+        layer.fillColor = UIColor.clear.cgColor
+        layer.lineWidth = lineWidth
+        layer.path = path.cgPath
+        return layer
+    }
+    
+    /**
+     创建虚线线条
+     
+     @param color 颜色
+     @param lineWidth 线宽
+     @param path path
+     @return 线
+     */
+    static func getDashLineLayer(_ color: UIColor, lineWidth: CGFloat, path: UIBezierPath, dashPattern: [NSNumber]) -> CAShapeLayer {
+        let layer: CAShapeLayer = CAShapeLayer()
+        
+        layer.fillColor = UIColor.clear.cgColor
+        layer.strokeColor = color.cgColor
+        layer.lineWidth = lineWidth
+        layer.lineJoin = CAShapeLayerLineJoin.round
+        layer.lineDashPhase = 0
+        layer.lineDashPattern = dashPattern
+        layer.path = path.cgPath
+        return layer
+    }
+    
+    /**
+     画圆
+     
+     @param point 中心点
+     @param boards 直径
+     @param color 颜色
+     @return 圆
+     */
+    static func cricleLayer(_ point: CGPoint, boards: CGFloat, color: UIColor) -> CAShapeLayer {
+        let path: UIBezierPath = UIBezierPath.init(ovalIn: CGRect.init(x: 0, y: 0, width: boards, height: boards))
+        let layer: CAShapeLayer = CAShapeLayer()
+        layer.position = point
+        layer.path = path.cgPath
+        layer.fillColor = color.cgColor
+        return layer
+    }
 }

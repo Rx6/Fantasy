@@ -132,4 +132,73 @@ public extension UIView {
             self.frame = frame
         }
     }
+    var viewController: UIViewController? {
+        var view = self
+        while let responder = view.next {
+            if let vc = responder as? UIViewController {
+                return vc
+            }
+            if let vi = view.superview {
+                view = vi
+            } else {
+                break
+            }
+        }
+        return nil
+    }
+    
+    var visibleAlpha: CGFloat {
+        if self is UIWindow {
+            return isHidden ? 0 : alpha
+        }
+        guard window != nil else {return 0}
+        var alpha: CGFloat = 1
+        var v: UIView? = self
+        while let vi = v {
+            if vi.isHidden {
+                alpha = 0
+            } else {
+                alpha *= vi.alpha
+                v = vi.superview
+            }
+        }
+        return alpha
+    }
+    
+    func copyView<T: UIView>() -> T {
+        return NSKeyedUnarchiver.unarchiveObject(with: NSKeyedArchiver.archivedData(withRootObject: self)) as! T
+    }
+    
+//    func convert(_ point: CGPoint, toView: UIView?) -> CGPoint {
+//        if let view = toView {
+//            let from: UIWindow?
+//            let to: UIWindow?
+//            if let window = self as? UIWindow {
+//                from = window
+//            } else {
+//                from = self.window
+//            }
+//        } else {
+//            if let windown = self as? UIWindow {
+//                return windown.convert(point, to: nil)
+//            } else {
+//                return self.convert(point, to: nil)
+//            }
+//        }
+//    }
+    
+    func setLayerShadow(_ color: UIColor, offset: CGSize, radius: CGFloat) {
+        self.layer.shadowColor = color.cgColor
+        self.layer.shadowOffset = offset
+        self.layer.shadowRadius = radius
+        self.layer.shadowOpacity = 1
+        self.layer.shouldRasterize = true
+        self.layer.rasterizationScale = UIScreen.main.scale
+    }
+    
+    func removeAllSubviews() {
+        while self.subviews.count > 0 {
+            subviews.last?.removeFromSuperview()
+        }
+    }
 }

@@ -19,6 +19,7 @@
 		EA16C60B24BF1204003F96E7 /* UIColor+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5FF24BF1204003F96E7 /* UIColor+FKExtension.swift */; };
 		EA16C60C24BF1204003F96E7 /* UIFont+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C60024BF1204003F96E7 /* UIFont+FKExtension.swift */; };
 		EA16C60D24BF1204003F96E7 /* UIBezierPath+FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C60124BF1204003F96E7 /* UIBezierPath+FKExtension.swift */; };
+		EA16C64824C689CC003F96E7 /* UILabel_FKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16C64724C689CC003F96E7 /* UILabel_FKExtension.swift */; };
 		EA8FA23224BE02520083F767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FA23124BE02520083F767 /* AppDelegate.swift */; };
 		EA8FA23424BE02520083F767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FA23324BE02520083F767 /* SceneDelegate.swift */; };
 		EA8FA23624BE02520083F767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FA23524BE02520083F767 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		EA16C5FF24BF1204003F96E7 /* UIColor+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+FKExtension.swift"; sourceTree = "<group>"; };
 		EA16C60024BF1204003F96E7 /* UIFont+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+FKExtension.swift"; sourceTree = "<group>"; };
 		EA16C60124BF1204003F96E7 /* UIBezierPath+FKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+FKExtension.swift"; sourceTree = "<group>"; };
+		EA16C64724C689CC003F96E7 /* UILabel_FKExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel_FKExtension.swift; sourceTree = "<group>"; };
 		EA8FA22E24BE02520083F767 /* FantasyKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8FA23124BE02520083F767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA8FA23324BE02520083F767 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				EA16C5FC24BF1204003F96E7 /* UITableView+FKExtension.swift */,
 				EAE0B96524BF56B1005400D0 /* UIView+FKExtension.swift */,
 				EAE0B96724BF5C62005400D0 /* UITextField+FKExtension.swift */,
+				EA16C64724C689CC003F96E7 /* UILabel_FKExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				EA8FA24A24BE09A00083F767 /* CALayer+FKExtension.swift in Sources */,
 				EA16C60524BF1204003F96E7 /* UIGestureRecognizer+FKExtension.swift in Sources */,
 				EA16C60C24BF1204003F96E7 /* UIFont+FKExtension.swift in Sources */,
+				EA16C64824C689CC003F96E7 /* UILabel_FKExtension.swift in Sources */,
 				EA16C60D24BF1204003F96E7 /* UIBezierPath+FKExtension.swift in Sources */,
 				EA8FA23424BE02520083F767 /* SceneDelegate.swift in Sources */,
 			);
